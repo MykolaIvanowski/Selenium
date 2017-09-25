@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite"   >
+    <listeners>
+        <listener class-name="com.epam.lab.report.CustomListener"/>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    </listeners>
+    <test name="Test1">
+        <classes >
+            <class name="com.epam.lab.GMailFailTest"></class>
+            <class name="com.epam.lab.GMailTest"></class>
+        </classes>
+    </test>
+</suite>
